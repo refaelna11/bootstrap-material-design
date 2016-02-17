@@ -1,3 +1,9 @@
+/* line 8, /Users/kross/projects/bootstrap-material-design/scss/mixins/_type.scss */
+.card {
+  font-size: .875rem;
+  font-weight: normal;
+}
+
 /*! normalize.css commit fe56763 | MIT License | github.com/necolas/normalize.css */
 /* line 9, node_modules/bootstrap/scss/_normalize.scss */
 html {
@@ -317,7 +323,7 @@ th {
     border-top-color: #000 !important;
   }
   /* line 95, node_modules/bootstrap/scss/_print.scss */
-  .label {
+  .tag {
     border: 1px solid #000;
   }
   /* line 99, node_modules/bootstrap/scss/_print.scss */
@@ -654,7 +660,7 @@ small,
 /* line 67, node_modules/bootstrap/scss/_type.scss */
 mark,
 .mark {
-  padding: .2em;
+  padding: 0.2em;
   background-color: #ff5722;
 }
 
@@ -786,7 +792,7 @@ samp {
 
 /* line 10, node_modules/bootstrap/scss/_code.scss */
 code {
-  padding: .2rem .4rem;
+  padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #bd4147;
   background-color: #eee;
@@ -795,7 +801,7 @@ code {
 
 /* line 19, node_modules/bootstrap/scss/_code.scss */
 kbd {
-  padding: .2rem .4rem;
+  padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #fff;
   background-color: #333;
@@ -2755,19 +2761,21 @@ pre code {
   color: rgba(0, 0, 0, 0.54);
   background-color: transparent;
   background-image: none;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.26);
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 26, node_modules/bootstrap/scss/_forms.scss */
+/* line 27, node_modules/bootstrap/scss/_forms.scss */
 .form-control::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-/* line 57, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 58, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .form-control:focus {
   border-color: #66afe9;
   outline: none;
@@ -2775,7 +2783,7 @@ pre code {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px none;
 }
 
-/* line 35, node_modules/bootstrap/scss/_forms.scss */
+/* line 36, node_modules/bootstrap/scss/_forms.scss */
 .form-control::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.26);
   opacity: 1;
@@ -2793,35 +2801,35 @@ pre code {
   opacity: 1;
 }
 
-/* line 46, node_modules/bootstrap/scss/_forms.scss */
+/* line 47, node_modules/bootstrap/scss/_forms.scss */
 .form-control:disabled, .form-control[readonly] {
   background-color: transparent;
   opacity: 1;
 }
 
-/* line 53, node_modules/bootstrap/scss/_forms.scss */
+/* line 54, node_modules/bootstrap/scss/_forms.scss */
 .form-control:disabled {
   cursor: not-allowed;
 }
 
-/* line 59, node_modules/bootstrap/scss/_forms.scss */
+/* line 60, node_modules/bootstrap/scss/_forms.scss */
 select.form-control:not([size]):not([multiple]) {
   height: 2.375rem;
 }
 
-/* line 65, node_modules/bootstrap/scss/_forms.scss */
+/* line 66, node_modules/bootstrap/scss/_forms.scss */
 .form-control-file,
 .form-control-range {
   display: block;
 }
 
-/* line 77, node_modules/bootstrap/scss/_forms.scss */
+/* line 78, node_modules/bootstrap/scss/_forms.scss */
 .form-control-label {
   padding: 0.4375rem 0;
   margin-bottom: 0;
 }
 
-/* line 99, node_modules/bootstrap/scss/_forms.scss */
+/* line 100, node_modules/bootstrap/scss/_forms.scss */
 _::-webkit-full-page-media.form-control,
 input[type="date"].form-control,
 input[type="time"].form-control,
@@ -2830,7 +2838,7 @@ input[type="month"].form-control {
   line-height: 2.375rem;
 }
 
-/* line 103, node_modules/bootstrap/scss/_forms.scss */
+/* line 104, node_modules/bootstrap/scss/_forms.scss */
 _::-webkit-full-page-media.input-sm,
 .input-group-sm _::-webkit-full-page-media.form-control,
 input[type="date"].input-sm,
@@ -2848,7 +2856,7 @@ input[type="month"].form-control {
   line-height: 1.8125rem;
 }
 
-/* line 108, node_modules/bootstrap/scss/_forms.scss */
+/* line 109, node_modules/bootstrap/scss/_forms.scss */
 _::-webkit-full-page-media.input-lg,
 .input-group-lg _::-webkit-full-page-media.form-control,
 input[type="date"].input-lg,
@@ -2866,7 +2874,7 @@ input[type="month"].form-control {
   line-height: 2.791667rem;
 }
 
-/* line 120, node_modules/bootstrap/scss/_forms.scss */
+/* line 121, node_modules/bootstrap/scss/_forms.scss */
 .form-control-static {
   min-height: 2.375rem;
   padding-top: 0.4375rem;
@@ -2874,7 +2882,7 @@ input[type="month"].form-control {
   margin-bottom: 0;
 }
 
-/* line 128, node_modules/bootstrap/scss/_forms.scss */
+/* line 129, node_modules/bootstrap/scss/_forms.scss */
 .form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
@@ -2884,7 +2892,7 @@ input[type="month"].form-control {
   padding-left: 0;
 }
 
-/* line 144, node_modules/bootstrap/scss/_forms.scss */
+/* line 145, node_modules/bootstrap/scss/_forms.scss */
 .form-control-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
@@ -2893,7 +2901,7 @@ input[type="month"].form-control {
   border-radius: 0.0625rem;
 }
 
-/* line 150, node_modules/bootstrap/scss/_forms.scss */
+/* line 151, node_modules/bootstrap/scss/_forms.scss */
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
@@ -2902,12 +2910,12 @@ input[type="month"].form-control {
   border-radius: 0.3rem;
 }
 
-/* line 162, node_modules/bootstrap/scss/_forms.scss */
+/* line 163, node_modules/bootstrap/scss/_forms.scss */
 .form-group {
   margin-bottom: 0.5rem;
 }
 
-/* line 171, node_modules/bootstrap/scss/_forms.scss */
+/* line 172, node_modules/bootstrap/scss/_forms.scss */
 .radio,
 .checkbox {
   position: relative;
@@ -2915,7 +2923,7 @@ input[type="month"].form-control {
   margin-bottom: 0.375rem;
 }
 
-/* line 178, node_modules/bootstrap/scss/_forms.scss */
+/* line 179, node_modules/bootstrap/scss/_forms.scss */
 .radio label,
 .checkbox label {
   padding-left: 1.25rem;
@@ -2923,13 +2931,13 @@ input[type="month"].form-control {
   cursor: pointer;
 }
 
-/* line 184, node_modules/bootstrap/scss/_forms.scss */
+/* line 185, node_modules/bootstrap/scss/_forms.scss */
 .radio label input:only-child,
 .checkbox label input:only-child {
   position: static;
 }
 
-/* line 189, node_modules/bootstrap/scss/_forms.scss */
+/* line 190, node_modules/bootstrap/scss/_forms.scss */
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -2939,13 +2947,13 @@ input[type="month"].form-control {
   margin-left: -1.25rem;
 }
 
-/* line 199, node_modules/bootstrap/scss/_forms.scss */
+/* line 200, node_modules/bootstrap/scss/_forms.scss */
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -.25rem;
 }
 
-/* line 206, node_modules/bootstrap/scss/_forms.scss */
+/* line 207, node_modules/bootstrap/scss/_forms.scss */
 .radio-inline,
 .checkbox-inline {
   position: relative;
@@ -2956,33 +2964,33 @@ input[type="month"].form-control {
   cursor: pointer;
 }
 
-/* line 215, node_modules/bootstrap/scss/_forms.scss */
+/* line 216, node_modules/bootstrap/scss/_forms.scss */
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: .75rem;
 }
 
-/* line 227, node_modules/bootstrap/scss/_forms.scss */
+/* line 228, node_modules/bootstrap/scss/_forms.scss */
 input[type="radio"]:disabled, input[type="radio"].disabled,
 input[type="checkbox"]:disabled,
 input[type="checkbox"].disabled {
   cursor: not-allowed;
 }
 
-/* line 235, node_modules/bootstrap/scss/_forms.scss */
+/* line 236, node_modules/bootstrap/scss/_forms.scss */
 .radio-inline.disabled,
 .checkbox-inline.disabled {
   cursor: not-allowed;
 }
 
-/* line 243, node_modules/bootstrap/scss/_forms.scss */
+/* line 244, node_modules/bootstrap/scss/_forms.scss */
 .radio.disabled label,
 .checkbox.disabled label {
   cursor: not-allowed;
 }
 
-/* line 254, node_modules/bootstrap/scss/_forms.scss */
+/* line 255, node_modules/bootstrap/scss/_forms.scss */
 .form-control-success,
 .form-control-warning,
 .form-control-danger {
@@ -3003,28 +3011,29 @@ input[type="checkbox"].disabled {
 .has-success.radio label,
 .has-success.checkbox label,
 .has-success.radio-inline label,
-.has-success.checkbox-inline label {
+.has-success.checkbox-inline label,
+.has-success .custom-control {
   color: #4caf50;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-success .form-control {
   border-color: #4caf50;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-success .input-group-addon {
   color: #4caf50;
   border-color: #4caf50;
   background-color: #d9eeda;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-success .form-control-feedback {
   color: #4caf50;
 }
 
-/* line 267, node_modules/bootstrap/scss/_forms.scss */
+/* line 268, node_modules/bootstrap/scss/_forms.scss */
 .has-success .form-control-success {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%235cb85c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E");
 }
@@ -3039,28 +3048,29 @@ input[type="checkbox"].disabled {
 .has-warning.radio label,
 .has-warning.checkbox label,
 .has-warning.radio-inline label,
-.has-warning.checkbox-inline label {
+.has-warning.checkbox-inline label,
+.has-warning .custom-control {
   color: #ff5722;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-warning .form-control {
   border-color: #ff5722;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-warning .input-group-addon {
   color: #ff5722;
   border-color: #ff5722;
   background-color: #fff2ee;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-warning .form-control-feedback {
   color: #ff5722;
 }
 
-/* line 275, node_modules/bootstrap/scss/_forms.scss */
+/* line 276, node_modules/bootstrap/scss/_forms.scss */
 .has-warning .form-control-warning {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23f0ad4e' d='M4.4 5.324h-.8v-2.46h.8zm0 1.42h-.8V5.89h.8zM3.76.63L.04 7.075c-.115.2.016.425.26.426h7.397c.242 0 .372-.226.258-.426C6.726 4.924 5.47 2.79 4.253.63c-.113-.174-.39-.174-.494 0z'/%3E%3C/svg%3E");
 }
@@ -3075,70 +3085,71 @@ input[type="checkbox"].disabled {
 .has-danger.radio label,
 .has-danger.checkbox label,
 .has-danger.radio-inline label,
-.has-danger.checkbox-inline label {
+.has-danger.checkbox-inline label,
+.has-danger .custom-control {
   color: #f44336;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-danger .form-control {
   border-color: #f44336;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-danger .input-group-addon {
   color: #f44336;
   border-color: #f44336;
   background-color: #fff8f7;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-danger .form-control-feedback {
   color: #f44336;
 }
 
-/* line 283, node_modules/bootstrap/scss/_forms.scss */
+/* line 284, node_modules/bootstrap/scss/_forms.scss */
 .has-danger .form-control-danger {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
 }
 
 @media (min-width: 544px) {
-  /* line 381, node_modules/bootstrap/scss/_forms.scss */
+  /* line 382, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 388, node_modules/bootstrap/scss/_forms.scss */
+  /* line 389, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 395, node_modules/bootstrap/scss/_forms.scss */
+  /* line 396, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-control-static {
     display: inline-block;
   }
-  /* line 399, node_modules/bootstrap/scss/_forms.scss */
+  /* line 400, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 403, node_modules/bootstrap/scss/_forms.scss */
+  /* line 404, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
   .form-inline .input-group .form-control {
     width: auto;
   }
-  /* line 411, node_modules/bootstrap/scss/_forms.scss */
+  /* line 412, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .input-group > .form-control {
     width: 100%;
   }
-  /* line 415, node_modules/bootstrap/scss/_forms.scss */
+  /* line 416, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .form-control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 422, node_modules/bootstrap/scss/_forms.scss */
+  /* line 423, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .radio,
   .form-inline .checkbox {
     display: inline-block;
@@ -3146,18 +3157,18 @@ input[type="checkbox"].disabled {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 429, node_modules/bootstrap/scss/_forms.scss */
+  /* line 430, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .radio label,
   .form-inline .checkbox label {
     padding-left: 0;
   }
-  /* line 433, node_modules/bootstrap/scss/_forms.scss */
+  /* line 434, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
-  /* line 440, node_modules/bootstrap/scss/_forms.scss */
+  /* line 441, node_modules/bootstrap/scss/_forms.scss */
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
@@ -3565,14 +3576,6 @@ fieldset[disabled] a.btn {
   border-color: #009688;
 }
 
-/* line 67, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
-.btn-outline-primary:focus, .btn-outline-primary.focus, .btn-outline-primary:active, .btn-outline-primary.active,
-.open > .btn-outline-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #009688;
-  border-color: #009688;
-}
-
 /* line 10, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-primary:hover {
   color: #fff;
@@ -3580,7 +3583,32 @@ fieldset[disabled] a.btn {
   border-color: #009688;
 }
 
-/* line 84, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+/* line 73, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/* line 80, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-primary:active, .btn-outline-primary.active,
+.open > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-primary:active:hover, .btn-outline-primary:active:focus, .btn-outline-primary:active.focus, .btn-outline-primary.active:hover, .btn-outline-primary.active:focus, .btn-outline-primary.active.focus,
+.open > .btn-outline-primary.dropdown-toggle:hover,
+.open > .btn-outline-primary.dropdown-toggle:focus,
+.open > .btn-outline-primary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #003f39;
+  border-color: #001714;
+}
+
+/* line 98, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-primary.disabled:focus, .btn-outline-primary.disabled.focus, .btn-outline-primary:disabled:focus, .btn-outline-primary:disabled.focus {
   border-color: #00fce4;
 }
@@ -3598,14 +3626,6 @@ fieldset[disabled] a.btn {
   border-color: #ccc;
 }
 
-/* line 67, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
-.btn-outline-secondary:focus, .btn-outline-secondary.focus, .btn-outline-secondary:active, .btn-outline-secondary.active,
-.open > .btn-outline-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #ccc;
-  border-color: #ccc;
-}
-
 /* line 10, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-secondary:hover {
   color: #fff;
@@ -3613,7 +3633,32 @@ fieldset[disabled] a.btn {
   border-color: #ccc;
 }
 
-/* line 84, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+/* line 73, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+/* line 80, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-secondary:active, .btn-outline-secondary.active,
+.open > .btn-outline-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-secondary:active:hover, .btn-outline-secondary:active:focus, .btn-outline-secondary:active.focus, .btn-outline-secondary.active:hover, .btn-outline-secondary.active:focus, .btn-outline-secondary.active.focus,
+.open > .btn-outline-secondary.dropdown-toggle:hover,
+.open > .btn-outline-secondary.dropdown-toggle:focus,
+.open > .btn-outline-secondary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #a1a1a1;
+  border-color: #8c8c8c;
+}
+
+/* line 98, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-secondary.disabled:focus, .btn-outline-secondary.disabled.focus, .btn-outline-secondary:disabled:focus, .btn-outline-secondary:disabled.focus {
   border-color: white;
 }
@@ -3631,14 +3676,6 @@ fieldset[disabled] a.btn {
   border-color: #03a9f4;
 }
 
-/* line 67, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
-.btn-outline-info:focus, .btn-outline-info.focus, .btn-outline-info:active, .btn-outline-info.active,
-.open > .btn-outline-info.dropdown-toggle {
-  color: #fff;
-  background-color: #03a9f4;
-  border-color: #03a9f4;
-}
-
 /* line 10, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-info:hover {
   color: #fff;
@@ -3646,7 +3683,32 @@ fieldset[disabled] a.btn {
   border-color: #03a9f4;
 }
 
-/* line 84, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+/* line 73, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-info:focus, .btn-outline-info.focus {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+}
+
+/* line 80, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-info:active, .btn-outline-info.active,
+.open > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #03a9f4;
+  border-color: #03a9f4;
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-info:active:hover, .btn-outline-info:active:focus, .btn-outline-info:active.focus, .btn-outline-info.active:hover, .btn-outline-info.active:focus, .btn-outline-info.active.focus,
+.open > .btn-outline-info.dropdown-toggle:hover,
+.open > .btn-outline-info.dropdown-toggle:focus,
+.open > .btn-outline-info.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #026e9e;
+  border-color: #015276;
+}
+
+/* line 98, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-info.disabled:focus, .btn-outline-info.disabled.focus, .btn-outline-info:disabled:focus, .btn-outline-info:disabled.focus {
   border-color: #60ccfd;
 }
@@ -3664,14 +3726,6 @@ fieldset[disabled] a.btn {
   border-color: #4caf50;
 }
 
-/* line 67, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
-.btn-outline-success:focus, .btn-outline-success.focus, .btn-outline-success:active, .btn-outline-success.active,
-.open > .btn-outline-success.dropdown-toggle {
-  color: #fff;
-  background-color: #4caf50;
-  border-color: #4caf50;
-}
-
 /* line 10, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-success:hover {
   color: #fff;
@@ -3679,7 +3733,32 @@ fieldset[disabled] a.btn {
   border-color: #4caf50;
 }
 
-/* line 84, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+/* line 73, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-success:focus, .btn-outline-success.focus {
+  color: #fff;
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* line 80, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-success:active, .btn-outline-success.active,
+.open > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-success:active:hover, .btn-outline-success:active:focus, .btn-outline-success:active.focus, .btn-outline-success.active:hover, .btn-outline-success.active:focus, .btn-outline-success.active.focus,
+.open > .btn-outline-success.dropdown-toggle:hover,
+.open > .btn-outline-success.dropdown-toggle:focus,
+.open > .btn-outline-success.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #327334;
+  border-color: #255627;
+}
+
+/* line 98, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-success.disabled:focus, .btn-outline-success.disabled.focus, .btn-outline-success:disabled:focus, .btn-outline-success:disabled.focus {
   border-color: #92cf94;
 }
@@ -3697,14 +3776,6 @@ fieldset[disabled] a.btn {
   border-color: #ff5722;
 }
 
-/* line 67, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
-.btn-outline-warning:focus, .btn-outline-warning.focus, .btn-outline-warning:active, .btn-outline-warning.active,
-.open > .btn-outline-warning.dropdown-toggle {
-  color: #fff;
-  background-color: #ff5722;
-  border-color: #ff5722;
-}
-
 /* line 10, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-warning:hover {
   color: #fff;
@@ -3712,7 +3783,32 @@ fieldset[disabled] a.btn {
   border-color: #ff5722;
 }
 
-/* line 84, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+/* line 73, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-warning:focus, .btn-outline-warning.focus {
+  color: #fff;
+  background-color: #ff5722;
+  border-color: #ff5722;
+}
+
+/* line 80, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-warning:active, .btn-outline-warning.active,
+.open > .btn-outline-warning.dropdown-toggle {
+  color: #fff;
+  background-color: #ff5722;
+  border-color: #ff5722;
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-warning:active:hover, .btn-outline-warning:active:focus, .btn-outline-warning:active.focus, .btn-outline-warning.active:hover, .btn-outline-warning.active:focus, .btn-outline-warning.active.focus,
+.open > .btn-outline-warning.dropdown-toggle:hover,
+.open > .btn-outline-warning.dropdown-toggle:focus,
+.open > .btn-outline-warning.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #ca3100;
+  border-color: #a22700;
+}
+
+/* line 98, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-warning.disabled:focus, .btn-outline-warning.disabled.focus, .btn-outline-warning:disabled:focus, .btn-outline-warning:disabled.focus {
   border-color: #ffa588;
 }
@@ -3730,14 +3826,6 @@ fieldset[disabled] a.btn {
   border-color: #f44336;
 }
 
-/* line 67, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
-.btn-outline-danger:focus, .btn-outline-danger.focus, .btn-outline-danger:active, .btn-outline-danger.active,
-.open > .btn-outline-danger.dropdown-toggle {
-  color: #fff;
-  background-color: #f44336;
-  border-color: #f44336;
-}
-
 /* line 10, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn-outline-danger:hover {
   color: #fff;
@@ -3745,7 +3833,32 @@ fieldset[disabled] a.btn {
   border-color: #f44336;
 }
 
-/* line 84, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+/* line 73, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-danger:focus, .btn-outline-danger.focus {
+  color: #fff;
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+/* line 80, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-danger:active, .btn-outline-danger.active,
+.open > .btn-outline-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+/* line 87, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
+.btn-outline-danger:active:hover, .btn-outline-danger:active:focus, .btn-outline-danger:active.focus, .btn-outline-danger.active:hover, .btn-outline-danger.active:focus, .btn-outline-danger.active.focus,
+.open > .btn-outline-danger.dropdown-toggle:hover,
+.open > .btn-outline-danger.dropdown-toggle:focus,
+.open > .btn-outline-danger.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #c8180b;
+  border-color: #a21309;
+}
+
+/* line 98, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_buttons.scss */
 .btn-outline-danger.disabled:focus, .btn-outline-danger.disabled.focus, .btn-outline-danger:disabled:focus, .btn-outline-danger:disabled.focus {
   border-color: #f99d97;
 }
@@ -4416,21 +4529,22 @@ input[type="button"].btn-block {
   position: relative;
   display: inline;
   padding-left: 1.5rem;
+  cursor: pointer;
 }
 
-/* line 17, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 18, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control + .custom-control {
   margin-left: 1rem;
 }
 
-/* line 22, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 23, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-/* line 27, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 28, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:checked ~ .custom-control-indicator {
   color: #fff;
   background-color: #0074d9;
@@ -4438,13 +4552,13 @@ input[type="button"].btn-block {
           box-shadow: none;
 }
 
-/* line 33, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 34, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:focus ~ .custom-control-indicator {
   -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
           box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
 }
 
-/* line 38, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 39, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:active ~ .custom-control-indicator {
   color: #fff;
   background-color: #84c6ff;
@@ -4452,19 +4566,19 @@ input[type="button"].btn-block {
           box-shadow: none;
 }
 
-/* line 45, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 46, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:disabled ~ .custom-control-indicator {
   cursor: not-allowed;
   background-color: #eee;
 }
 
-/* line 50, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 51, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-input:disabled ~ .custom-control-description {
   color: #767676;
   cursor: not-allowed;
 }
 
-/* line 61, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 62, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-control-indicator {
   position: absolute;
   top: .0625rem;
@@ -4486,17 +4600,17 @@ input[type="button"].btn-block {
           box-shadow: inset 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
-/* line 82, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 83, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-indicator {
   border-radius: 0.125rem;
 }
 
-/* line 86, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 87, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 
-/* line 90, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 91, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
   background-color: #0074d9;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
@@ -4504,34 +4618,34 @@ input[type="button"].btn-block {
           box-shadow: none;
 }
 
-/* line 102, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 103, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-indicator {
   border-radius: 50%;
 }
 
-/* line 106, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 107, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-input:checked ~ .custom-control-indicator {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-/* line 118, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 119, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-controls-stacked .custom-control {
   display: inline;
 }
 
-/* line 121, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 122, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-controls-stacked .custom-control::after {
   display: block;
   margin-bottom: 0.25rem;
   content: "";
 }
 
-/* line 127, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 128, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-controls-stacked .custom-control + .custom-control {
   margin-left: 0;
 }
 
-/* line 141, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 142, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select {
   display: inline-block;
   max-width: 100%;
@@ -4549,7 +4663,7 @@ input[type="button"].btn-block {
   -webkit-appearance: none;
 }
 
-/* line 157, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 158, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select:focus {
   border-color: #51a7e8;
   outline: none;
@@ -4557,19 +4671,19 @@ input[type="button"].btn-block {
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
 }
 
-/* line 164, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 165, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select::-ms-expand {
   opacity: 0;
 }
 
-/* line 169, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 170, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select-sm {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
 }
 
-/* line 185, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 186, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file {
   position: relative;
   display: inline-block;
@@ -4578,7 +4692,7 @@ input[type="button"].btn-block {
   cursor: pointer;
 }
 
-/* line 193, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 194, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-input {
   min-width: 14rem;
   max-width: 100%;
@@ -4587,13 +4701,13 @@ input[type="button"].btn-block {
   opacity: 0;
 }
 
-/* line 200, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 201, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-input:focus ~ .custom-file-control {
   -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
           box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
 }
 
-/* line 205, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 206, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-control {
   position: absolute;
   top: 0;
@@ -4615,12 +4729,12 @@ input[type="button"].btn-block {
           box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
 }
 
-/* line 221, node_modules/bootstrap/scss/_custom-forms.scss */
-.custom-file-control::after {
+/* line 223, node_modules/bootstrap/scss/_custom-forms.scss */
+.custom-file-control:lang(en)::after {
   content: "Choose file...";
 }
 
-/* line 225, node_modules/bootstrap/scss/_custom-forms.scss */
+/* line 228, node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-file-control::before {
   position: absolute;
   top: -1px;
@@ -4632,10 +4746,14 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem;
   line-height: 1.5;
   color: #555;
-  content: "Browse";
   background-color: #eee;
   border: 1px solid #ddd;
   border-radius: 0 0.125rem 0.125rem 0;
+}
+
+/* line 245, node_modules/bootstrap/scss/_custom-forms.scss */
+.custom-file-control:lang(en)::before {
+  content: "Browse";
 }
 
 /* line 6, node_modules/bootstrap/scss/_nav.scss */
@@ -4872,8 +4990,8 @@ input[type="button"].btn-block {
 /* line 70, node_modules/bootstrap/scss/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   margin-right: 1rem;
   font-size: 1.25rem;
 }
@@ -5091,15 +5209,17 @@ input[type="button"].btn-block {
 
 /* line 55, node_modules/bootstrap/scss/_card.scss */
 .card > .list-group:first-child .list-group-item:first-child {
-  border-radius: 0.125rem 0.125rem 0 0;
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
 }
 
-/* line 61, node_modules/bootstrap/scss/_card.scss */
+/* line 62, node_modules/bootstrap/scss/_card.scss */
 .card > .list-group:last-child .list-group-item:last-child {
-  border-radius: 0 0 0.125rem 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
 }
 
-/* line 73, node_modules/bootstrap/scss/_card.scss */
+/* line 75, node_modules/bootstrap/scss/_card.scss */
 .card-header {
   padding: 0.75rem 1.25rem;
   background-color: #fff;
@@ -5114,12 +5234,12 @@ input[type="button"].btn-block {
   clear: both;
 }
 
-/* line 81, node_modules/bootstrap/scss/_card.scss */
+/* line 83, node_modules/bootstrap/scss/_card.scss */
 .card-header:first-child {
   border-radius: 0.125rem 0.125rem 0 0;
 }
 
-/* line 86, node_modules/bootstrap/scss/_card.scss */
+/* line 88, node_modules/bootstrap/scss/_card.scss */
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: #fff;
@@ -5134,12 +5254,12 @@ input[type="button"].btn-block {
   clear: both;
 }
 
-/* line 94, node_modules/bootstrap/scss/_card.scss */
+/* line 96, node_modules/bootstrap/scss/_card.scss */
 .card-footer:last-child {
   border-radius: 0 0 0.125rem 0.125rem;
 }
 
-/* line 104, node_modules/bootstrap/scss/_card.scss */
+/* line 106, node_modules/bootstrap/scss/_card.scss */
 .card-header-tabs {
   margin-right: -0.625rem;
   margin-bottom: -0.75rem;
@@ -5147,78 +5267,78 @@ input[type="button"].btn-block {
   border-bottom: 0;
 }
 
-/* line 110, node_modules/bootstrap/scss/_card.scss */
+/* line 112, node_modules/bootstrap/scss/_card.scss */
 .card-header-tabs .nav-item {
   margin-bottom: 0;
 }
 
-/* line 115, node_modules/bootstrap/scss/_card.scss */
+/* line 117, node_modules/bootstrap/scss/_card.scss */
 .card-header-pills {
   margin-right: -0.625rem;
   margin-left: -0.625rem;
 }
 
-/* line 125, node_modules/bootstrap/scss/_card.scss */
+/* line 127, node_modules/bootstrap/scss/_card.scss */
 .card-primary {
   background-color: #009688;
   border-color: #009688;
 }
 
-/* line 128, node_modules/bootstrap/scss/_card.scss */
+/* line 130, node_modules/bootstrap/scss/_card.scss */
 .card-success {
   background-color: #4caf50;
   border-color: #4caf50;
 }
 
-/* line 131, node_modules/bootstrap/scss/_card.scss */
+/* line 133, node_modules/bootstrap/scss/_card.scss */
 .card-info {
   background-color: #03a9f4;
   border-color: #03a9f4;
 }
 
-/* line 134, node_modules/bootstrap/scss/_card.scss */
+/* line 136, node_modules/bootstrap/scss/_card.scss */
 .card-warning {
   background-color: #ff5722;
   border-color: #ff5722;
 }
 
-/* line 137, node_modules/bootstrap/scss/_card.scss */
+/* line 139, node_modules/bootstrap/scss/_card.scss */
 .card-danger {
   background-color: #f44336;
   border-color: #f44336;
 }
 
-/* line 142, node_modules/bootstrap/scss/_card.scss */
+/* line 144, node_modules/bootstrap/scss/_card.scss */
 .card-outline-primary {
   background-color: transparent;
   border-color: #009688;
 }
 
-/* line 145, node_modules/bootstrap/scss/_card.scss */
+/* line 147, node_modules/bootstrap/scss/_card.scss */
 .card-outline-secondary {
   background-color: transparent;
   border-color: #ccc;
 }
 
-/* line 148, node_modules/bootstrap/scss/_card.scss */
+/* line 150, node_modules/bootstrap/scss/_card.scss */
 .card-outline-info {
   background-color: transparent;
   border-color: #03a9f4;
 }
 
-/* line 151, node_modules/bootstrap/scss/_card.scss */
+/* line 153, node_modules/bootstrap/scss/_card.scss */
 .card-outline-success {
   background-color: transparent;
   border-color: #4caf50;
 }
 
-/* line 154, node_modules/bootstrap/scss/_card.scss */
+/* line 156, node_modules/bootstrap/scss/_card.scss */
 .card-outline-warning {
   background-color: transparent;
   border-color: #ff5722;
 }
 
-/* line 157, node_modules/bootstrap/scss/_card.scss */
+/* line 159, node_modules/bootstrap/scss/_card.scss */
 .card-outline-danger {
   background-color: transparent;
   border-color: #f44336;
@@ -5250,19 +5370,19 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
-/* line 173, node_modules/bootstrap/scss/_card.scss */
+/* line 175, node_modules/bootstrap/scss/_card.scss */
 .card-blockquote {
   padding: 0;
   margin-bottom: 0;
   border-left: 0;
 }
 
-/* line 180, node_modules/bootstrap/scss/_card.scss */
+/* line 182, node_modules/bootstrap/scss/_card.scss */
 .card-img {
   border-radius: 0.25rem;
 }
 
-/* line 184, node_modules/bootstrap/scss/_card.scss */
+/* line 186, node_modules/bootstrap/scss/_card.scss */
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -5272,18 +5392,18 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
-/* line 196, node_modules/bootstrap/scss/_card.scss */
+/* line 198, node_modules/bootstrap/scss/_card.scss */
 .card-img-top {
   border-radius: 0.125rem 0.125rem 0 0;
 }
 
-/* line 199, node_modules/bootstrap/scss/_card.scss */
+/* line 201, node_modules/bootstrap/scss/_card.scss */
 .card-img-bottom {
   border-radius: 0 0 0.125rem 0.125rem;
 }
 
 @media (min-width: 544px) {
-  /* line 210, node_modules/bootstrap/scss/_card.scss */
+  /* line 212, node_modules/bootstrap/scss/_card.scss */
   .card-deck {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5295,7 +5415,7 @@ input[type="button"].btn-block {
     margin-right: -0.625rem;
     margin-left: -0.625rem;
   }
-  /* line 216, node_modules/bootstrap/scss/_card.scss */
+  /* line 218, node_modules/bootstrap/scss/_card.scss */
   .card-deck .card {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 0;
@@ -5307,7 +5427,7 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 544px) {
-  /* line 249, node_modules/bootstrap/scss/_card.scss */
+  /* line 251, node_modules/bootstrap/scss/_card.scss */
   .card-group {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5317,49 +5437,49 @@ input[type="button"].btn-block {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
-  /* line 259, node_modules/bootstrap/scss/_card.scss */
+  /* line 261, node_modules/bootstrap/scss/_card.scss */
   .card-group .card {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 0;
         -ms-flex: 1 0 0;
             flex: 1 0 0;
   }
-  /* line 267, node_modules/bootstrap/scss/_card.scss */
+  /* line 269, node_modules/bootstrap/scss/_card.scss */
   .card-group .card + .card {
     margin-left: 0;
     border-left: 0;
   }
-  /* line 274, node_modules/bootstrap/scss/_card.scss */
+  /* line 276, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:first-child {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
   }
-  /* line 277, node_modules/bootstrap/scss/_card.scss */
+  /* line 279, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:first-child .card-img-top {
     border-top-right-radius: 0;
   }
-  /* line 280, node_modules/bootstrap/scss/_card.scss */
+  /* line 282, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:first-child .card-img-bottom {
     border-bottom-right-radius: 0;
   }
-  /* line 284, node_modules/bootstrap/scss/_card.scss */
+  /* line 286, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:last-child {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
   }
-  /* line 287, node_modules/bootstrap/scss/_card.scss */
+  /* line 289, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:last-child .card-img-top {
     border-top-left-radius: 0;
   }
-  /* line 290, node_modules/bootstrap/scss/_card.scss */
+  /* line 292, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:last-child .card-img-bottom {
     border-bottom-left-radius: 0;
   }
-  /* line 295, node_modules/bootstrap/scss/_card.scss */
+  /* line 297, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
-  /* line 298, node_modules/bootstrap/scss/_card.scss */
+  /* line 300, node_modules/bootstrap/scss/_card.scss */
   .card-group .card:not(:first-child):not(:last-child) .card-img-top,
   .card-group .card:not(:first-child):not(:last-child) .card-img-bottom {
     border-radius: 0;
@@ -5367,7 +5487,7 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 544px) {
-  /* line 314, node_modules/bootstrap/scss/_card.scss */
+  /* line 316, node_modules/bootstrap/scss/_card.scss */
   .card-columns {
     -webkit-column-count: 3;
        -moz-column-count: 3;
@@ -5376,7 +5496,7 @@ input[type="button"].btn-block {
        -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
   }
-  /* line 318, node_modules/bootstrap/scss/_card.scss */
+  /* line 320, node_modules/bootstrap/scss/_card.scss */
   .card-columns .card {
     display: inline-block;
     width: 100%;
@@ -5528,10 +5648,10 @@ input[type="button"].btn-block {
   border-top-right-radius: 0.0625rem;
 }
 
-/* line 6, node_modules/bootstrap/scss/_labels.scss */
-.label {
+/* line 6, node_modules/bootstrap/scss/_tags.scss */
+.tag {
   display: inline-block;
-  padding: .25em .4em;
+  padding: 0.25em 0.4em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -5542,88 +5662,88 @@ input[type="button"].btn-block {
   border-radius: 0.125rem;
 }
 
-/* line 19, node_modules/bootstrap/scss/_labels.scss */
-.label:empty {
+/* line 19, node_modules/bootstrap/scss/_tags.scss */
+.tag:empty {
   display: none;
 }
 
-/* line 25, node_modules/bootstrap/scss/_labels.scss */
-.btn .label {
+/* line 25, node_modules/bootstrap/scss/_tags.scss */
+.btn .tag {
   position: relative;
   top: -1px;
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-a.label:focus, a.label:hover {
+a.tag:focus, a.tag:hover {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 45, node_modules/bootstrap/scss/_labels.scss */
-.label-pill {
-  padding-right: .6em;
-  padding-left: .6em;
+/* line 45, node_modules/bootstrap/scss/_tags.scss */
+.tag-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
   border-radius: 10rem;
 }
 
-/* line 57, node_modules/bootstrap/scss/_labels.scss */
-.label-default {
+/* line 55, node_modules/bootstrap/scss/_tags.scss */
+.tag-default {
   background-color: rgba(0, 0, 0, 0.26);
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-.label-default[href]:focus, .label-default[href]:hover {
+.tag-default[href]:focus, .tag-default[href]:hover {
   background-color: rgba(0, 0, 0, 0.26);
 }
 
-/* line 61, node_modules/bootstrap/scss/_labels.scss */
-.label-primary {
+/* line 59, node_modules/bootstrap/scss/_tags.scss */
+.tag-primary {
   background-color: #009688;
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-.label-primary[href]:focus, .label-primary[href]:hover {
+.tag-primary[href]:focus, .tag-primary[href]:hover {
   background-color: #00635a;
 }
 
-/* line 65, node_modules/bootstrap/scss/_labels.scss */
-.label-success {
+/* line 63, node_modules/bootstrap/scss/_tags.scss */
+.tag-success {
   background-color: #4caf50;
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-.label-success[href]:focus, .label-success[href]:hover {
+.tag-success[href]:focus, .tag-success[href]:hover {
   background-color: #3d8b40;
 }
 
-/* line 69, node_modules/bootstrap/scss/_labels.scss */
-.label-info {
+/* line 67, node_modules/bootstrap/scss/_tags.scss */
+.tag-info {
   background-color: #03a9f4;
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-.label-info[href]:focus, .label-info[href]:hover {
+.tag-info[href]:focus, .tag-info[href]:hover {
   background-color: #0286c2;
 }
 
-/* line 73, node_modules/bootstrap/scss/_labels.scss */
-.label-warning {
+/* line 71, node_modules/bootstrap/scss/_tags.scss */
+.tag-warning {
   background-color: #ff5722;
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-.label-warning[href]:focus, .label-warning[href]:hover {
+.tag-warning[href]:focus, .tag-warning[href]:hover {
   background-color: #ee3900;
 }
 
-/* line 77, node_modules/bootstrap/scss/_labels.scss */
-.label-danger {
+/* line 75, node_modules/bootstrap/scss/_tags.scss */
+.tag-danger {
   background-color: #f44336;
 }
 
 /* line 20, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_hover.scss */
-.label-danger[href]:focus, .label-danger[href]:hover {
+.tag-danger[href]:focus, .tag-danger[href]:hover {
   background-color: #ea1c0d;
 }
 
@@ -6082,7 +6202,7 @@ base::-moz-progress-bar,
 .list-group-item {
   position: relative;
   display: block;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: inherit;
   border: 0 solid #ddd;
@@ -6526,23 +6646,7 @@ button.close {
   clear: both;
 }
 
-/* line 106, node_modules/bootstrap/scss/_modal.scss */
-.modal-footer .btn + .btn {
-  margin-bottom: 0;
-  margin-left: 5px;
-}
-
-/* line 111, node_modules/bootstrap/scss/_modal.scss */
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-
-/* line 115, node_modules/bootstrap/scss/_modal.scss */
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
-}
-
-/* line 121, node_modules/bootstrap/scss/_modal.scss */
+/* line 107, node_modules/bootstrap/scss/_modal.scss */
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -6552,24 +6656,24 @@ button.close {
 }
 
 @media (min-width: 544px) {
-  /* line 132, node_modules/bootstrap/scss/_modal.scss */
+  /* line 118, node_modules/bootstrap/scss/_modal.scss */
   .modal-dialog {
     max-width: 600px;
     margin: 30px auto;
   }
-  /* line 137, node_modules/bootstrap/scss/_modal.scss */
+  /* line 123, node_modules/bootstrap/scss/_modal.scss */
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-  /* line 141, node_modules/bootstrap/scss/_modal.scss */
+  /* line 127, node_modules/bootstrap/scss/_modal.scss */
   .modal-sm {
     max-width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 145, node_modules/bootstrap/scss/_modal.scss */
+  /* line 131, node_modules/bootstrap/scss/_modal.scss */
   .modal-lg {
     max-width: 900px;
   }
@@ -7057,7 +7161,7 @@ button.close {
   border-radius: 10px;
 }
 
-/* line 188, node_modules/bootstrap/scss/_carousel.scss */
+/* line 189, node_modules/bootstrap/scss/_carousel.scss */
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
@@ -7065,7 +7169,7 @@ button.close {
   background-color: #fff;
 }
 
-/* line 201, node_modules/bootstrap/scss/_carousel.scss */
+/* line 202, node_modules/bootstrap/scss/_carousel.scss */
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -7079,13 +7183,13 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* line 213, node_modules/bootstrap/scss/_carousel.scss */
+/* line 214, node_modules/bootstrap/scss/_carousel.scss */
 .carousel-caption .btn {
   text-shadow: none;
 }
 
 @media (min-width: 544px) {
-  /* line 226, node_modules/bootstrap/scss/_carousel.scss */
+  /* line 227, node_modules/bootstrap/scss/_carousel.scss */
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
     width: 30px;
@@ -7093,21 +7197,21 @@ button.close {
     margin-top: -15px;
     font-size: 30px;
   }
-  /* line 233, node_modules/bootstrap/scss/_carousel.scss */
+  /* line 234, node_modules/bootstrap/scss/_carousel.scss */
   .carousel-control .icon-prev {
     margin-left: -15px;
   }
-  /* line 236, node_modules/bootstrap/scss/_carousel.scss */
+  /* line 237, node_modules/bootstrap/scss/_carousel.scss */
   .carousel-control .icon-next {
     margin-right: -15px;
   }
-  /* line 242, node_modules/bootstrap/scss/_carousel.scss */
+  /* line 243, node_modules/bootstrap/scss/_carousel.scss */
   .carousel-caption {
     right: 20%;
     left: 20%;
     padding-bottom: 30px;
   }
-  /* line 249, node_modules/bootstrap/scss/_carousel.scss */
+  /* line 250, node_modules/bootstrap/scss/_carousel.scss */
   .carousel-indicators {
     bottom: 20px;
   }
@@ -8418,12 +8522,6 @@ a.text-danger:focus, a.text-danger:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-/* line 8, /Users/kross/projects/bootstrap-material-design/scss/mixins/_type.scss */
-.card {
-  font-size: .875rem;
-  font-weight: normal;
 }
 
 /* line 1, /Users/kross/projects/bootstrap-material-design/scss/_reboot.scss */
@@ -11325,6 +11423,7 @@ fieldset[disabled]
 .is-focused.checkbox label,
 .is-focused.radio-inline label,
 .is-focused.checkbox-inline label,
+.is-focused .custom-control,
 .is-focused .text-help,
 .is-focused .form-control-label,
 .is-focused .radio,
@@ -11334,17 +11433,18 @@ fieldset[disabled]
 .is-focused.radio label,
 .is-focused.checkbox label,
 .is-focused.radio-inline label,
-.is-focused.checkbox-inline label {
+.is-focused.checkbox-inline label,
+.is-focused .custom-control {
   color: rgba(0, 0, 0, 0.26);
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .is-focused .form-control,
 .is-focused .form-control {
   border-color: rgba(0, 0, 0, 0.26);
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .is-focused .input-group-addon,
 .is-focused .input-group-addon {
   color: rgba(0, 0, 0, 0.26);
@@ -11352,7 +11452,7 @@ fieldset[disabled]
   background-color: rgba(102, 102, 102, 0.26);
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .is-focused .form-control-feedback,
 .is-focused .form-control-feedback {
   color: rgba(0, 0, 0, 0.26);
@@ -11438,7 +11538,8 @@ fieldset[disabled]
 .has-success .is-focused.radio label,
 .has-success .is-focused.checkbox label,
 .has-success .is-focused.radio-inline label,
-.has-success .is-focused.checkbox-inline label, .has-success.is-focused .text-help,
+.has-success .is-focused.checkbox-inline label,
+.has-success .is-focused .custom-control, .has-success.is-focused .text-help,
 .has-success.is-focused .form-control-label,
 .has-success.is-focused .radio,
 .has-success.is-focused .checkbox,
@@ -11447,23 +11548,24 @@ fieldset[disabled]
 .has-success.is-focused.radio label,
 .has-success.is-focused.checkbox label,
 .has-success.is-focused.radio-inline label,
-.has-success.is-focused.checkbox-inline label {
+.has-success.is-focused.checkbox-inline label,
+.has-success.is-focused .custom-control {
   color: #4caf50;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-success .is-focused .form-control, .has-success.is-focused .form-control {
   border-color: #4caf50;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-success .is-focused .input-group-addon, .has-success.is-focused .input-group-addon {
   color: #4caf50;
   border-color: #4caf50;
   background-color: #d9eeda;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-success .is-focused .form-control-feedback, .has-success.is-focused .form-control-feedback {
   color: #4caf50;
 }
@@ -11543,7 +11645,8 @@ fieldset[disabled]
 .has-info .is-focused.radio label,
 .has-info .is-focused.checkbox label,
 .has-info .is-focused.radio-inline label,
-.has-info .is-focused.checkbox-inline label, .has-info.is-focused .text-help,
+.has-info .is-focused.checkbox-inline label,
+.has-info .is-focused .custom-control, .has-info.is-focused .text-help,
 .has-info.is-focused .form-control-label,
 .has-info.is-focused .radio,
 .has-info.is-focused .checkbox,
@@ -11552,23 +11655,24 @@ fieldset[disabled]
 .has-info.is-focused.radio label,
 .has-info.is-focused.checkbox label,
 .has-info.is-focused.radio-inline label,
-.has-info.is-focused.checkbox-inline label {
+.has-info.is-focused.checkbox-inline label,
+.has-info.is-focused .custom-control {
   color: #03a9f4;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-info .is-focused .form-control, .has-info.is-focused .form-control {
   border-color: #03a9f4;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-info .is-focused .input-group-addon, .has-info.is-focused .input-group-addon {
   color: #03a9f4;
   border-color: #03a9f4;
   background-color: #c5ecfe;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-info .is-focused .form-control-feedback, .has-info.is-focused .form-control-feedback {
   color: #03a9f4;
 }
@@ -11648,7 +11752,8 @@ fieldset[disabled]
 .has-warning .is-focused.radio label,
 .has-warning .is-focused.checkbox label,
 .has-warning .is-focused.radio-inline label,
-.has-warning .is-focused.checkbox-inline label, .has-warning.is-focused .text-help,
+.has-warning .is-focused.checkbox-inline label,
+.has-warning .is-focused .custom-control, .has-warning.is-focused .text-help,
 .has-warning.is-focused .form-control-label,
 .has-warning.is-focused .radio,
 .has-warning.is-focused .checkbox,
@@ -11657,23 +11762,24 @@ fieldset[disabled]
 .has-warning.is-focused.radio label,
 .has-warning.is-focused.checkbox label,
 .has-warning.is-focused.radio-inline label,
-.has-warning.is-focused.checkbox-inline label {
+.has-warning.is-focused.checkbox-inline label,
+.has-warning.is-focused .custom-control {
   color: #ff5722;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-warning .is-focused .form-control, .has-warning.is-focused .form-control {
   border-color: #ff5722;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-warning .is-focused .input-group-addon, .has-warning.is-focused .input-group-addon {
   color: #ff5722;
   border-color: #ff5722;
   background-color: #fff2ee;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-warning .is-focused .form-control-feedback, .has-warning.is-focused .form-control-feedback {
   color: #ff5722;
 }
@@ -11753,7 +11859,8 @@ fieldset[disabled]
 .has-danger .is-focused.radio label,
 .has-danger .is-focused.checkbox label,
 .has-danger .is-focused.radio-inline label,
-.has-danger .is-focused.checkbox-inline label, .has-danger.is-focused .text-help,
+.has-danger .is-focused.checkbox-inline label,
+.has-danger .is-focused .custom-control, .has-danger.is-focused .text-help,
 .has-danger.is-focused .form-control-label,
 .has-danger.is-focused .radio,
 .has-danger.is-focused .checkbox,
@@ -11762,23 +11869,24 @@ fieldset[disabled]
 .has-danger.is-focused.radio label,
 .has-danger.is-focused.checkbox label,
 .has-danger.is-focused.radio-inline label,
-.has-danger.is-focused.checkbox-inline label {
+.has-danger.is-focused.checkbox-inline label,
+.has-danger.is-focused .custom-control {
   color: #f44336;
 }
 
-/* line 21, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 22, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-danger .is-focused .form-control, .has-danger.is-focused .form-control {
   border-color: #f44336;
 }
 
-/* line 33, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 34, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-danger .is-focused .input-group-addon, .has-danger.is-focused .input-group-addon {
   color: #f44336;
   border-color: #f44336;
   background-color: #fff8f7;
 }
 
-/* line 39, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
+/* line 40, /Users/kross/projects/bootstrap-material-design/node_modules/bootstrap/scss/mixins/_forms.scss */
 .has-danger .is-focused .form-control-feedback, .has-danger.is-focused .form-control-feedback {
   color: #f44336;
 }

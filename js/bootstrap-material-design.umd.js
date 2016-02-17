@@ -1,5 +1,5 @@
 /*!
- * Bootstrap Material Design v4.0.0-prealpha (https://github.com/FezVrasta/bootstrap-material-design)
+ * Bootstrap Material Design v4.0.0-alpha (https://github.com/FezVrasta/bootstrap-material-design)
  * Copyright 2014-2016 Federico Zivolo
  * Licensed under MIT (https://github.com/FezVrasta/bootstrap-material-design/blob/master/LICENSE)
  */
@@ -890,6 +890,7 @@
     var BaseInput = function (_Base) {
       babelHelpers.inherits(BaseInput, _Base);
 
+
       /**
        *
        * @param element
@@ -900,6 +901,7 @@
       function BaseInput($element, config) {
         var properties = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
         babelHelpers.classCallCheck(this, BaseInput);
+
 
         // Enforce no overlap between components to prevent side effects
 
@@ -1192,6 +1194,7 @@
             for (var _iterator3 = this.config.requiredClasses[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
               var requiredClass = _step3.value;
 
+
               var found = false;
               // allow one of several classes to be passed in x||y
               if (requiredClass.indexOf('||') !== -1) {
@@ -1456,6 +1459,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = Checkbox._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Checkbox;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -1553,6 +1557,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = CheckboxInline._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = CheckboxInline;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -1596,6 +1601,7 @@
 
     var CollapseInline = function (_Base) {
       babelHelpers.inherits(CollapseInline, _Base);
+
 
       // $element is expected to be the trigger
       //  i.e. <button class="btn mdb-btn-icon" for="search" data-toggle="collapse" data-target="#search-field" aria-expanded="false" aria-controls="search-field">
@@ -1676,6 +1682,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = CollapseInline._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = CollapseInline;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -1736,6 +1743,7 @@
         }
       }, {
         key: 'outerElement',
+
 
         // ------------------------------------------------------------------------
         // protected
@@ -1825,6 +1833,7 @@
      * jQuery
      * ------------------------------------------------------------------------
      */
+
 
     $.fn[JQUERY_NAME] = File._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = File;
@@ -1927,6 +1936,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = Radio._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Radio;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -2012,6 +2022,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = RadioInline._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = RadioInline;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -2044,6 +2055,7 @@
 
       function BaseFormControl($element, config) {
         babelHelpers.classCallCheck(this, BaseFormControl);
+
 
         // Initially mark as empty
 
@@ -2088,6 +2100,7 @@
 
       function Select($element, config) {
         babelHelpers.classCallCheck(this, Select);
+
 
         // floating labels will cover the options, so trigger them to be above (if used)
 
@@ -2149,6 +2162,7 @@
      * jQuery
      * ------------------------------------------------------------------------
      */
+
 
     $.fn[JQUERY_NAME] = Select._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Select;
@@ -2229,6 +2243,7 @@
      * jQuery
      * ------------------------------------------------------------------------
      */
+
 
     $.fn[JQUERY_NAME] = Switch._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Switch;
@@ -2323,6 +2338,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = Text._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Text;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -2413,6 +2429,7 @@
      * jQuery
      * ------------------------------------------------------------------------
      */
+
 
     $.fn[JQUERY_NAME] = Textarea._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Textarea;
@@ -2614,6 +2631,7 @@
     var Drawer = function (_BaseLayout) {
       babelHelpers.inherits(Drawer, _BaseLayout);
 
+
       // $element is expected to be the trigger
       //  i.e. <button class="btn mdb-btn-icon" for="search" data-toggle="drawer" data-target="#my-side-nav-drawer" aria-expanded="false" aria-controls="my-side-nav-drawer">
 
@@ -2750,6 +2768,7 @@
      * jQuery
      * ------------------------------------------------------------------------
      */
+
 
     $.fn[JQUERY_NAME] = Drawer._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Drawer;
@@ -3099,6 +3118,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = Ripples._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Ripples;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -3223,6 +3243,7 @@
      * ------------------------------------------------------------------------
      */
 
+
     $.fn[JQUERY_NAME] = Autofill._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = Autofill;
     $.fn[JQUERY_NAME].noConflict = function () {
@@ -3343,6 +3364,7 @@
           var _loop = function _loop() {
             var component = _step.value;
 
+
             // the component's config fragment is passed in directly, allowing users to override
             var componentConfig = _this.config[component];
 
@@ -3447,6 +3469,7 @@
      * jQuery
      * ------------------------------------------------------------------------
      */
+
 
     $.fn[JQUERY_NAME] = BootstrapMaterialDesign._jQueryInterface;
     $.fn[JQUERY_NAME].Constructor = BootstrapMaterialDesign;
