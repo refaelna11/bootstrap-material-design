@@ -183,6 +183,12 @@
       line-height: @bs-line-height-base;
       //---
     }
+
+    @media (max-width: @screen-sm) {
+      & {
+        margin: 8px auto;
+      }
+    }
   }
 
   // SASS conversion note: please mirror any content change in _mixins-shared.scss navbar-variations-content
@@ -211,10 +217,18 @@
             overflow: hidden;
             white-space: nowrap;
             opacity: 0.87;
-            font-size: 0.9em;
+            font-size: 0.8em;
           }
           &.is-empty:not(.is-focused) label.control-label {
             top: -10px;
+            font-size: 0.9em;
+          }
+
+          &.is-focused,
+          &:not(.is-empty) {
+            label.control-label {
+              top: -26px;
+            }
           }
         }
 
