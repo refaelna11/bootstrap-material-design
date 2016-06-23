@@ -106,6 +106,7 @@
             font-family: 'Material Icons';
             font-size: 1.5em;
             float:right;
+            font-feature-settings: 'liga'; /* Support for IE. */
           }
         }
         .dropdown-menu{
@@ -195,16 +196,23 @@
       color: inherit;
       padding: 0;
       margin: 0;
+      margin-top: 4px;
 
       // re-normalize inputs in a navbar the size of standard bootstrap since our normal inputs are larger by spec than bootstrap
       //---
       //height: $mdb-input-height-base;
       $bs-line-height-base: 1.428571429 !default;
       $bs-line-height-computed:    floor(($font-size-base * $bs-line-height-base)) !default; // ~20px
-      height: ($bs-line-height-computed + 8px);
+      height: ($bs-line-height-computed + 2px);
       font-size: $font-size-base;
       line-height: $bs-line-height-base;
       //---
+    }
+
+    @media (max-width: $screen-sm) {
+      & {
+        margin: 8px auto;
+      }
     }
   }
 

@@ -22,11 +22,11 @@ $mdb-label-color-toggle-focus: unquote("rgba(#{$rgb-black}, .54)") !default;
 // Converted bs variables
 
 // Bootstrap brand color customization
-$brand-primary: $teal !default;
-$brand-success: $green !default;
-$brand-danger: $red !default;
-$brand-warning: $deep-orange !default;
-$brand-info: $light-blue !default;
+$brand-primary: $indigo-600 !default;
+$brand-success: $green-600 !default;
+$brand-danger: $red-600 !default;
+$brand-warning: $amber-700 !default;
+$brand-info: $light-blue-600 !default;
 
 $border-radius-base: 2px !default;
 $border-radius-small: 1px !default;
